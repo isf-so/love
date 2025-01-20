@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #ff69b4, -0.03em -0.04em 0 #ff1493,
+                 0.025em 0.04em 0 #ff69b4;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #ff69b4, -0.03em -0.04em 0 #ff1493,
+                 0.025em 0.04em 0 #ff69b4;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #ff69b4, 0.025em 0.035em 0 #ff1493,
+                 -0.05em -0.05em 0 #ff69b4;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #ff69b4, 0.025em 0.035em 0 #ff1493,
+                 -0.05em -0.05em 0 #ff69b4;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #ff69b4, 0.03em 0 0 #ff1493,
+                 0 -0.04em 0 #ff69b4;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #ff69b4, 0.03em 0 0 #ff1493,
+                 0 -0.04em 0 #ff69b4;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #ff69b4, -0.025em -0.04em 0 #ff1493,
+                 -0.04em -0.025em 0 #ff69b4;
+  }
+}
